@@ -1,0 +1,31 @@
+{
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "start": "yarn start:manager",
+    "start:manager": "yarn workspace @muil/editor-manager start",
+    "start:editor": "yarn workspace @muil/editor start -d \"./packages/templates-starter-kit\"",
+    "start:charts": "yarn workspace @muil/editor start -d \"./packages/charts\"",
+    "cli": "yarn workspace @muil/cli start",
+    "cli:templates": "yarn workspace @muil/cli start -d \"./packages/templates-starter-kit\"",
+    "cli:charts": "yarn workspace @muil/cli start -d \"./packages/charts\"",
+    "build:templates": "yarn workspace @muil/cli start build -d \"./packages/templates-starter-kit\"",
+    "lerna:publish": "lerna publish",
+    "lint": "eslint packages"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "crlf": "^1.1.1",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "lerna": "^3.20.2",
+    "prettier": "^2.0.5"
+  }
+}

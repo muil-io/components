@@ -1,0 +1,30 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "prettier"],
+  "parser": "babel-eslint",
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"],
+        "extensions": [".js", ".jsx", ".svg"]
+      }
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "no-console": "off",
+    "no-nested-ternary": "off",
+    "new-cap": "off",
+    "consistent-return": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/extensions": "off",
+    "import/prefer-default-export": "off",
+    "react/jsx-filename-extension": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "react/no-array-index-key": "off",
+    "jsx-a11y/anchor-is-valid": "off"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "name": "@muil/charts",
+  "version": "0.2.16",
+  "license": "MIT",
+  "files": [
+    "lib/index.js"
+  ],
+  "main": "lib/index.js",
+  "homepage": "https://github.com/shahafa/muil-editor/tree/master/packages/charts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shahafa/muil-editor.git",
+    "directory": "packages/charts"
+  },
+  "scripts": {
+    "start:charts": "yarn workspace @muil/editor start -d \"./packages/charts\"",
+    "cli:charts": "yarn workspace @muil/cli start -d \"./packages/charts\"",
+    "lerna:publish": "lerna publish",
+    "lint": "eslint packages"
+  },
+  "dependencies": {
+    "styled-components": "^5.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "crlf": "^1.1.1",
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^3.0.0",
+    "lerna": "^3.20.2",
+    "prettier": "^2.0.5"
+  }
+}
