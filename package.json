@@ -1,6 +1,6 @@
 {
   "name": "@muil/charts",
-  "version": "0.2.16",
+  "version": "0.2.18",
   "license": "MIT",
   "files": [
     "lib/index.js"
@@ -14,7 +14,6 @@
   "scripts": {
     "build": "webpack",
     "prepublish": "npm run build",
-    "lerna:publish": "lerna publish",
     "lint": "eslint packages",
     "muil": "muil-editor",
     "muil-cli": "muil-cli"
