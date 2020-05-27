@@ -14,6 +14,7 @@
     "start": "muil-viewer",
     "start:charts": "muil-viewer -d ./templates/charts",
     "start:layout": "muil-viewer -d ./templates/layout",
+    "start:core": "muil-viewer -d ./templates/core",
     "build": "webpack",
     "prepublish": "npm run build",
     "lint": "eslint packages",
