@@ -1,5 +1,5 @@
 {
-  "name": "@muil/charts",
+  "name": "@muil/components",
   "version": "0.2.18",
   "license": "MIT",
   "files": [
@@ -8,8 +8,7 @@
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/muil-io/charts",
-    "directory": "packages/charts"
+    "url": "https://github.com/muil-io/components"
   },
   "scripts": {
     "build": "webpack",
