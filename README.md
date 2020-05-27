@@ -1,18 +1,18 @@
-# Muil Charts
+# Muil Components
 
-Easily add charts to your emails.
+Easily develop emails with email-ready components.
 
 Visit [Muil Docs.](https://docs.muil.io)
 
 ## Installation
 
-`npm install @muil/charts`
+`npm install @muil/components`
 
 or
 
-`yarn add @muil/charts`
+`yarn add @muil/components`
 
-## Usages
+## Charts
 
 #### Bar Chart
 
@@ -21,7 +21,7 @@ or
 ![Bar Chart](media/bar-chart.png)
 
 ```
-import {BarChart} from '@muil/charts'
+import {BarChart} from '@muil/components'
 
 <BarChart
   height={200}
@@ -53,7 +53,7 @@ import {BarChart} from '@muil/charts'
 ![Multiple Bar Chart](media/multiple-bar-chart.png)
 
 ```
-import {BarChart} from '@muil/charts'
+import {BarChart} from '@muil/components'
 
 <BarChart
   height={300}
@@ -95,7 +95,7 @@ import {BarChart} from '@muil/charts'
 ![Bar Chart](media/hor-bar-chart.png)
 
 ```
-import {HorizontalBarChart} from '@muil/charts'
+import {HorizontalBarChart} from '@muil/components'
 
 <HorizontalBarChart
   maxWidth={400}
@@ -127,7 +127,7 @@ import {HorizontalBarChart} from '@muil/charts'
 ![Multiple Bar Chart](media/multiple-hor-bar-chart.png)
 
 ```
-import {HorizontalBarChart} from '@muil/charts'
+import {HorizontalBarChart} from '@muil/components'
 
 <HorizontalBarChart
   maxWidth={400}
@@ -169,7 +169,7 @@ import {HorizontalBarChart} from '@muil/charts'
 ![Calendar](media/calendar.png)
 
 ```
-import {Calendar} from '@muil/charts'
+import {Calendar} from '@muil/components'
 
 <Calendar showNumbers />
 ```
@@ -179,7 +179,7 @@ import {Calendar} from '@muil/charts'
 ![Heat map](media/heat-map.png)
 
 ```
-import {Calendar} from '@muil/charts'
+import {Calendar} from '@muil/components'
 
 <Calendar
   monthsBefore={1}
@@ -201,7 +201,7 @@ import {Calendar} from '@muil/charts'
 ![Heat map](media/line-bar.png)
 
 ```
-import {LineBar} from '@muil/charts'
+import {LineBar} from '@muil/components'
 
 <LineBar
   percents={[

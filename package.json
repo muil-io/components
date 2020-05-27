@@ -1,10 +1,11 @@
 {
   "name": "@muil/components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "files": [
     "lib/*.js"
   ],
+  "main": "lib/main.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/muil-io/components"

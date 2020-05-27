@@ -1,7 +1,7 @@
 const path = require('path');
 
 const paths = {
-  src: { charts: path.resolve(__dirname, 'src/charts'), layout: path.resolve(__dirname, 'src/layout') },
+  src: path.resolve(__dirname, 'src'),
   dist: path.resolve(__dirname, 'lib'),
 };
 
