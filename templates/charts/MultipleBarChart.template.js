@@ -1,29 +1,28 @@
 import React from 'react';
 import styled from 'styled-components';
-import BaseHorizontalBarChart from '../src/HorizontalBarChart';
+import { BarChart as BaseBarChart } from '../../src/charts';
 import Layout from './Layout';
 
 const Text = styled.div`
   font-family: Arial;
 `;
 
-const StyledHorizontalBarChart = styled(BaseHorizontalBarChart)`
+const StyledBarChart = styled(BaseBarChart)`
   margin: 0 auto;
 `;
 
-const BarChart = ({ color, maxWidth, categories, series }) => (
+const MultipleBarChart = ({ height, series, categories }) => (
   <Layout>
-    <Text>Horizontal Bar Chart</Text>
+    <Text>Multiple Bar Chart</Text>
 
-    <StyledHorizontalBarChart color={color} maxWidth={maxWidth} legend categories={categories} series={series} />
+    <StyledBarChart series={series} categories={categories} height={height} legend />
   </Layout>
 );
 
-BarChart.displayName = 'Multiple Horizontal Bar Chart';
+MultipleBarChart.displayName = 'Multiple Bar Chart';
 
-BarChart.dynamicProps = {
-  color: '#17a2b8',
-  maxWidth: 400,
+MultipleBarChart.dynamicProps = {
+  height: 300,
   categories: [
     { label: 'One Week', color: '#17a2b8' },
     { label: '2 Weeks', color: '#d5d5d4' },
@@ -45,4 +44,4 @@ BarChart.dynamicProps = {
   ],
 };
 
-export default BarChart;
+export default MultipleBarChart;

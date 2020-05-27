@@ -1,7 +1,7 @@
 const path = require('path');
 
 const paths = {
-  src: path.resolve(__dirname, 'src'),
+  src: { charts: path.resolve(__dirname, 'src/charts'), layout: path.resolve(__dirname, 'src/layout') },
   dist: path.resolve(__dirname, 'lib'),
 };
 
@@ -10,7 +10,7 @@ module.exports = {
   mode: 'production',
   devtool: 'none',
   output: {
-    filename: 'index.js',
+    filename: '[name].js',
     path: paths.dist,
     libraryTarget: 'commonjs2',
   },

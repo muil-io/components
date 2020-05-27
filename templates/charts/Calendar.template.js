@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import BaseCalendar from '../src/Calendar';
+import { Calendar as BaseCalendar } from '../../src/charts';
 import Layout from './Layout';
 
 const Text = styled.div`

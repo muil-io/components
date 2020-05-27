@@ -1,17 +1,19 @@
 {
-  "name": "@muil/charts",
+  "name": "@muil/components",
   "version": "0.2.18",
   "license": "MIT",
   "files": [
-    "lib/index.js"
+    "lib/*.js"
   ],
   "main": "lib/index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/muil-io/charts",
-    "directory": "packages/charts"
+    "url": "https://github.com/muil-io/components"
   },
   "scripts": {
+    "start": "muil-viewer",
+    "start:charts": "muil-viewer -d ./templates/charts",
+    "start:layout": "muil-viewer -d ./templates/layout",
     "build": "webpack",
     "prepublish": "npm run build",
     "lint": "eslint packages",
