@@ -43,6 +43,7 @@ const Carousel = ({ children }) => {
         <tr>
           <td>
             {range.map((id) => (
+              // eslint-disable-next-line jsx-a11y/label-has-associated-control
               <label key={id} htmlFor={id} className={`prev ${id}`}>
                 Prev
               </label>
@@ -57,6 +58,7 @@ const Carousel = ({ children }) => {
 
           <td>
             {range.map((id) => (
+              // eslint-disable-next-line jsx-a11y/label-has-associated-control
               <label key={id} htmlFor={id} className={`next ${id}`}>
                 Next
               </label>
