@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.a`
+  display: inline-block;
   background: #6735e0;
   color: #fff;
   text-decoration: none;
@@ -9,8 +10,8 @@ const Wrapper = styled.a`
   border-radius: 4px;
 `;
 
-const Button = ({ to, target = '_blank', children }) => (
-  <Wrapper href={to} target={target}>
+const Button = ({ to, target = '_blank', children, className }) => (
+  <Wrapper href={to} target={target} className={className}>
     {children}
   </Wrapper>
 );
