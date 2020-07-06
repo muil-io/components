@@ -22,6 +22,8 @@
     "muil-cli": "muil-cli"
   },
   "dependencies": {
+    "classnames": "^2.2.6",
+    "polished": "^3.6.5",
     "styled-components": "^5.0.1"
   },
   "devDependencies": {

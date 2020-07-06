@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BarChart as BaseBarChart } from '../../src/charts';
+import { BarChart as BaseBarChart } from '../src/charts';
 import Layout from './Layout';
 
 const Text = styled.div`
