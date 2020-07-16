@@ -1,6 +1,6 @@
 {
   "name": "@muil/components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "files": [
     "lib/*.js"
@@ -16,8 +16,9 @@
     "start:layout": "muil-viewer -d ./templates/layout",
     "start:core": "muil-viewer -d ./templates/core",
     "build": "webpack",
-    "prepublish": "npm run build",
+    "prepublish": "npm run generateToc && npm run build",
     "lint": "eslint packages",
+    "generateToc": "node scripts/generateToc.js",
     "muil": "muil-viewer",
     "muil-cli": "muil-cli"
   },
@@ -41,6 +42,8 @@
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-react-hooks": "^4.0.4",
+    "jsdom": "^16.3.0",
+    "node-fetch": "^2.6.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",

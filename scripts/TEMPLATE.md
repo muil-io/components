@@ -14,16 +14,7 @@ or
 
 ## Components
 
--  [Charts](https://docs.muil.io/docs/components/charts)
--  [Style](https://docs.muil.io/docs/components/style)
--  [Alignment](https://docs.muil.io/docs/components/alignment)
--  [Button](https://docs.muil.io/docs/components/button)
--  [Callout](https://docs.muil.io/docs/components/callout)
--  [Grid](https://docs.muil.io/docs/components/grid)
--  [Menu](https://docs.muil.io/docs/components/menu)
--  [Spacer](https://docs.muil.io/docs/components/spacer)
--  [Wrapper](https://docs.muil.io/docs/components/wrapper)
--  [Typography](https://docs.muil.io/docs/components/typography)
+<!--COMPONENTS!-->
 
 ## Basic Example
 
