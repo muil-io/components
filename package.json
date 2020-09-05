@@ -1,6 +1,6 @@
 {
   "name": "@muil/components",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "license": "MIT",
   "files": [
     "lib/*.js"
@@ -27,6 +27,10 @@
     "polished": "^3.6.5",
     "styled-components": "^5.0.1"
   },
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
   "devDependencies": {
     "@babel/core": "^7.10.0",
     "@babel/preset-env": "^7.10.0",
@@ -45,8 +49,6 @@
     "jsdom": "^16.3.0",
     "node-fetch": "^2.6.0",
     "prettier": "^2.0.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.11"
   }
