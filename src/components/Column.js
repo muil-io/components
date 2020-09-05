@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import classNames from 'classnames';
-import theme from '../style/theme';
+import {gridColumnCount} from '../style/theme';
 import { columnPaddingBottom } from '../style/selectors';
 
 const Wrapper = styled.th`
@@ -21,32 +21,29 @@ const Column = ({
   children,
   style = {},
   className,
-}) => {
-  const {gridColumnCount} = theme;
+}) => (
+  <Wrapper
+    className={classNames(
+      {
+        [`small-offset-${smallOffset}`]: smallOffset,
+        [`large-offset-${largeOffset}`]: largeOffset,
+        [`small-${small || 12}`]: true,
+        [`large-${large || small || Math.floor(gridColumnCount / colCount)}`]: true,
+      },
+      'columns',
+      { first, last },
+      className,
+    )}
+    style={{ ...style, verticalAlign: valign }}
+    columnPaddingBottom={paddingBottom}
+  >
+    <table>
+      <tr>
+        <th>{children}</th>
+        <th className="expander" />
+      </tr>
+    </table>
+  </Wrapper>
+);
 
-  return (
-    <Wrapper
-      className={classNames(
-        {
-          [`small-offset-${smallOffset}`]: smallOffset,
-          [`large-offset-${largeOffset}`]: largeOffset,
-          [`small-${small || 12}`]: true,
-          [`large-${large || small || Math.floor(gridColumnCount / colCount)}`]: true,
-        },
-        'columns',
-        { first, last },
-        className,
-      )}
-      style={{ ...style, verticalAlign: valign }}
-      columnPaddingBottom={paddingBottom}
-    >
-      <table>
-        <tr>
-          <th>{children}</th>
-          <th className="expander" />
-        </tr>
-      </table>
-    </Wrapper>
-  );
-};
 export default Column;
