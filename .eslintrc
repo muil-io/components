@@ -13,7 +13,9 @@
     "browser": true
   },
   "rules": {
+    "radix": "off",
     "no-console": "off",
+    "no-plusplus": "off",
     "no-nested-ternary": "off",
     "new-cap": "off",
     "consistent-return": "off",
@@ -25,6 +27,7 @@
     "react/jsx-props-no-spreading": "off",
     "react/jsx-one-expression-per-line": "off",
     "react/no-array-index-key": "off",
-    "jsx-a11y/anchor-is-valid": "off"
+    "jsx-a11y/anchor-is-valid": "off",
+    "jsx-a11y/control-has-associated-label": "off"
   }
 }
