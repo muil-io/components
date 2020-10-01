@@ -784,7 +784,9 @@ const grid = css`
 `;
 
 const menu = css`
-  width: ${({ theme }) => theme.globalWidth};
+  &.menu {
+    width: ${({ theme }) => theme.globalWidth};
+  }
 
   &.menu.vertical {
     td.menu-item,
