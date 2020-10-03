@@ -393,7 +393,7 @@ const typography = css`
   table.hr,
   table.h-line {
     th {
-      padding-bottom: $margin;
+      padding-bottom: ${({ theme }) => theme.hrMargin};
       ${({ theme: { hrAlign } }) => `text-align: ${hrAlign}`};
     }
 

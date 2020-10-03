@@ -313,7 +313,7 @@ const Button = ({
             <tr>
               <td>
                 {expanded ? (
-                  <center data-parsed>
+                  <center>
                     <a href={href}>{children}</a>
                   </center>
                 ) : (
