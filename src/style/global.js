@@ -34,12 +34,9 @@ const normalize = css`
     width: 100% !important;
     min-width: 100%;
     -webkit-text-size-adjust: 100%;
-    -ms-text-size-adjust: 100%;
     margin: 0;
     Margin: 0;
     padding: 0;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
   }
 
@@ -68,7 +65,6 @@ const normalize = css`
   img {
     outline: none;
     text-decoration: none;
-    -ms-interpolation-mode: bicubic;
     width: auto;
     max-width: 100%;
     clear: both;
@@ -93,7 +89,6 @@ const normalize = css`
   th {
     word-wrap: break-word;
     -webkit-hyphens: auto;
-    -moz-hyphens: auto;
     hyphens: auto;
     border-collapse: collapse !important;
   }
@@ -503,8 +498,6 @@ const mediaQuery = css`
     table.body .columns,
     table.body .column {
       height: auto !important;
-      -moz-box-sizing: border-box;
-      -webkit-box-sizing: border-box;
       box-sizing: border-box;
       padding-left: ${(props) => globalGutterSmall(props)} !important;
       padding-right: ${(props) => globalGutterSmall(props)} !important;
