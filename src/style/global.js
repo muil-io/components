@@ -237,6 +237,13 @@ const visibility = css`
 `;
 
 const typography = css`
+  body {
+    color: ${({ theme }) => theme.globalFontColor};
+    font-family: ${({ theme }) => theme.bodyFontFamily};
+    font-weight: ${({ theme }) => theme.globalFontWeight};
+    line-height: ${({ theme }) => theme.globalLineHeight};
+  }
+
   body,
   table.body,
   h1,
@@ -248,9 +255,6 @@ const typography = css`
   p,
   td,
   th {
-    color: ${({ theme }) => theme.globalFontColor};
-    font-family: ${({ theme }) => theme.bodyFontFamily};
-    font-weight: ${({ theme }) => theme.globalFontWeight};
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
@@ -258,7 +262,6 @@ const typography = css`
     margin: 0;
     Margin: 0;
     text-align: left;
-    line-height: ${({ theme }) => theme.globalLineHeight};
   }
 
   h1,
@@ -336,11 +339,8 @@ const typography = css`
   a {
     color: ${(props) => anchorColor(props)};
     text-decoration: ${({ theme }) => theme.anchorTextDecoration};
-    font-family: ${({ theme }) => theme.bodyFontFamily};
-    font-weight: ${({ theme }) => theme.globalFontWeight};
     padding: 0;
     text-align: left;
-    line-height: ${({ theme }) => theme.globalLineHeight};
 
     &:hover {
       color: ${(props) => anchorColorHover(props)};

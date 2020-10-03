@@ -19,7 +19,6 @@ const Wrapper = styled.table`
         border: ${(props) => buttonBorder(props)};
 
         a {
-          font-family: ${({ theme }) => theme.bodyFontFamily};
           font-size: ${(props) => getStyle(props, 'buttonFontSize', 'default')};
           font-weight: ${(props) => getStyle(props, 'buttonFontWeight')};
           color: ${(props) => getStyle(props, 'buttonColor')};
