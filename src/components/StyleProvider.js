@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { ThemeProvider } from 'styled-components';
-import classNames from 'classnames';
 import GlobalStyle from '../style/global';
 import defaultTheme from '../style/theme';
 
@@ -14,7 +13,7 @@ const StyleProvider = ({ theme, children, style, className }) => (
   <ThemeProvider theme={{ ...defaultTheme, ...theme }}>
     <>
       <GlobalStyle />
-      <Wrapper className={classNames('body', className)} style={style}>
+      <Wrapper className={className} style={style}>
         <tbody>
           <tr>
             <td className="center" align="center" valign="top">

@@ -240,7 +240,6 @@ const typography = css`
   body {
     color: ${({ theme }) => theme.globalFontColor};
     font-family: ${({ theme }) => theme.bodyFontFamily};
-    font-weight: ${({ theme }) => theme.globalFontWeight};
     line-height: ${({ theme }) => theme.globalLineHeight};
   }
 
@@ -255,6 +254,7 @@ const typography = css`
   p,
   td,
   th {
+    font-weight: ${({ theme }) => theme.globalFontWeight};
     padding-top: 0;
     padding-right: 0;
     padding-bottom: 0;
