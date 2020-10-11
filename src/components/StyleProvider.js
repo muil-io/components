@@ -13,7 +13,7 @@ const StyleProvider = ({ theme, children, style, className }) => (
   <ThemeProvider theme={{ ...defaultTheme, ...theme }}>
     <>
       <GlobalStyle />
-      <Wrapper className={className} style={style}>
+      <Wrapper className={classNames('body', className)} style={style}>
         <tbody>
           <tr>
             <td className="center" align="center" valign="top">
