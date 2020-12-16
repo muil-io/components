@@ -36,6 +36,7 @@ or
 -  [Spacer](https://docs.muil.io/docs/components/spacer)
 -  [Wrapper](https://docs.muil.io/docs/components/wrapper)
 -  [Charts](https://docs.muil.io/docs/components/charts)
+-  [PDF Page](https://docs.muil.io/docs/components/PDFPage)
 
 ## Basic Example
 
