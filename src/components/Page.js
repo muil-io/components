@@ -48,17 +48,15 @@ const Content = styled.div`
   flex: 1;
 `;
 
-const Page = ({ size = 'A4', page, renderHeader, renderFooter, landscape = false, children, className }) => {
-  return (
-    <>
-      <Global />
-      <Wrapper size={size} landscape={landscape} className={className}>
-        {renderHeader?.({ page })}
-        <Content>{children}</Content>
-        {renderFooter?.({ page })}
-      </Wrapper>
-    </>
-  );
-};
+const Page = ({ size = 'A4', page, renderHeader, renderFooter, landscape = false, children, className }) => (
+  <>
+    <Global />
+    <Wrapper size={size} landscape={landscape} className={className}>
+      {renderHeader?.({ page })}
+      <Content>{children}</Content>
+      {renderFooter?.({ page })}
+    </Wrapper>
+  </>
+);
 
 export default Page;

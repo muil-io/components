@@ -1,7 +1,7 @@
 import React from 'react';
 import { Page as BasePage } from '../src/components';
 
-const Page = ({ size = 'A4' }) => (
+const Page = () => (
   <>
     <BasePage renderHeader={() => <div>Header</div>} renderFooter={() => <div>Footer</div>}>
       1
