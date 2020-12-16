@@ -11,3 +11,4 @@ export { default as Spacer } from './Spacer';
 export { default as StyleProvider } from './StyleProvider';
 export * from './Text';
 export { default as Wrapper } from './Wrapper';
+export { default as Page } from './Page';
