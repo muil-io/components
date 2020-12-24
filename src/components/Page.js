@@ -31,6 +31,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   page-break-after: always;
+  box-sizing: border-box;
 
   @media print {
     box-shadow: none;
