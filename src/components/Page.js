@@ -30,18 +30,16 @@ const Wrapper = styled.div`
   padding: 30px;
   display: flex;
   flex-direction: column;
-  page-break-after: always;
   box-sizing: border-box;
-
-  @media print {
-    box-shadow: none;
-    width: 100%;
-    margin: 0 auto;
-  }
 
   @page {
     size: ${({ size }) => size} ${({ landscape }) => landscape && 'landscape'};
     margin: 0;
+  }
+
+  @media print {
+    box-shadow: none;
+    margin: 0 auto;
   }
 `;
 
