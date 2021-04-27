@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Container, Row, Column } from '../components';
 
 const MONTHS = [
   'January',
@@ -25,17 +26,20 @@ const Table = styled.table`
 const DateTitle = styled.th`
   font-size: 13px;
   padding: 10px 0;
+  text-align: center;
 `;
 
 const Day = styled.td`
   font-size: 13px;
   color: #868686;
+  text-align: center;
 `;
 
 const Cell = styled.td`
   width: 20px;
   height: 20px;
   text-align: center;
+  vertical-align: middle;
   font-size: 11px;
   color: #868686;
   ${({ empty }) => !empty && `background: #e4e4e4;`}
@@ -86,39 +90,43 @@ const Calendar = ({ className, style, monthsBefore = 0, monthsAfter = 0, showNum
   });
 
   return (
-    <div className={className} style={style}>
-      {calendars.map(({ month, calendar }, calendarIndex) => (
-        <Table key={calendarIndex}>
-          <thead>
-            <tr>
-              <DateTitle colSpan="7">{formatTitle(month)}</DateTitle>
-            </tr>
-          </thead>
-          <thead>
-            <tr>
-              <Day>S</Day>
-              <Day>M</Day>
-              <Day>T</Day>
-              <Day>W</Day>
-              <Day>T</Day>
-              <Day>F</Day>
-              <Day>S</Day>
-            </tr>
-          </thead>
-          <tbody>
-            {calendar.map((week, weekIndex) => (
-              <tr key={weekIndex}>
-                {week.map(({ day, date }, dayIndex) => (
-                  <Cell key={dayIndex} empty={!day} className={dayClassName?.({ day, date })}>
-                    {showNumbers ? day : ''}
-                  </Cell>
+    <Container className={className} style={style}>
+      <Row>
+        {calendars.map(({ month, calendar }, calendarIndex) => (
+          <Column key={calendarIndex}>
+            <Table>
+              <thead>
+                <tr>
+                  <DateTitle colSpan="7">{formatTitle(month)}</DateTitle>
+                </tr>
+              </thead>
+              <thead>
+                <tr>
+                  <Day>S</Day>
+                  <Day>M</Day>
+                  <Day>T</Day>
+                  <Day>W</Day>
+                  <Day>T</Day>
+                  <Day>F</Day>
+                  <Day>S</Day>
+                </tr>
+              </thead>
+              <tbody>
+                {calendar.map((week, weekIndex) => (
+                  <tr key={weekIndex}>
+                    {week.map(({ day, date }, dayIndex) => (
+                      <Cell key={dayIndex} empty={!day} className={dayClassName?.({ day, date })}>
+                        {showNumbers ? day : ''}
+                      </Cell>
+                    ))}
+                  </tr>
                 ))}
-              </tr>
-            ))}
-          </tbody>
-        </Table>
-      ))}
-    </div>
+              </tbody>
+            </Table>
+          </Column>
+        ))}
+      </Row>
+    </Container>
   );
 };
 

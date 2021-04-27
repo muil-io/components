@@ -6,13 +6,13 @@ const BarChart = ({ className, style, height, series = [], categories, legend = 
   <VerticalWrapper className={className} style={style} cellSpacing="0" cellPadding="0" height={height}>
     {legend && <Legend categories={categories} />}
 
-    <ColumnsRow className="columns">
+    <ColumnsRow className="chart-columns">
       {series.map(({ data, value }, index) => (
         <React.Fragment key={index}>
           {(data || [value]).map((dataValue, categoryIndex) => (
-            <Cell key={categoryIndex} className="column">
-              <ColumnLabel className="column label">{dataValue}</ColumnLabel>
-              <ColumnBar value={dataValue} color={categories[categoryIndex].color} className="column bar" />
+            <Cell key={categoryIndex} className="chart-column">
+              <ColumnLabel className="chart-column label">{dataValue}</ColumnLabel>
+              <ColumnBar value={dataValue} color={categories[categoryIndex].color} className="chart-column bar" />
             </Cell>
           ))}
 

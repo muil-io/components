@@ -16,8 +16,8 @@ const HorizontalBarChart = ({ className, style, maxWidth, series = [], categorie
           <FullWidthCell>
             {(data || [value]).map((dataValue, categoryIndex) => (
               <div>
-                <Row value={dataValue} color={categories[categoryIndex].color} className="column bar" />
-                <ColumnLabel className="column label">{dataValue}</ColumnLabel>
+                <Row value={dataValue} color={categories[categoryIndex].color} className="chart-column bar" />
+                <ColumnLabel className="chart-column label">{dataValue}</ColumnLabel>
               </div>
             ))}
           </FullWidthCell>

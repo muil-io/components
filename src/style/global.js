@@ -649,6 +649,10 @@ const grid = css`
     table {
       width: 100%;
 
+      > tr > th {
+        width: 100%;
+      }
+
       &.button {
         width: auto;
 
